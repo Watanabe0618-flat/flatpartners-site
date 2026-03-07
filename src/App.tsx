@@ -92,7 +92,7 @@ export default function App() {
               <p className="mt-2 text-sm">
                 税務会計フラットパートナーズ<br />
                 〒162-0825 東京都新宿区神楽坂2-17 中央ビル7F<br />
-                Mail: info@flatpartners.net
+                Mail: <a href="mailto:info@flatpartners.net?subject=%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B&body=%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0D%0A%E9%9B%BB%E8%A9%B1%E7%95%AA%E5%8F%B7%EF%BC%9A%0D%0A%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%EF%BC%9A%0D%0A%E3%81%94%E7%9B%B8%E8%AB%87%E5%86%85%E5%AE%B9%EF%BC%9A" className="text-blue-600 hover:underline">info@flatpartners.net</a>
               </p>
             </div>
           ) : (
