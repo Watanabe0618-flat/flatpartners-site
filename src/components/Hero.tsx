@@ -107,9 +107,6 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-               <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transition-all flex items-center justify-center hover:scale-105">
-                 無料相談はこちら <ArrowRight className="ml-2 h-5 w-5" />
-               </a>
                <a href="#services" className="bg-white/10 hover:bg-white/20 text-white font-bold py-4 px-8 rounded-full border border-white/30 backdrop-blur-sm transition-all flex items-center justify-center hover:bg-white/20">
                  サービス詳細を見る
                </a>
@@ -129,11 +126,11 @@ export default function Hero() {
               
               <div className="text-center mb-5">
                 <h3 className="inline-block bg-blue-50 text-blue-800 font-bold px-4 py-2 rounded-full text-sm sm:text-base border border-blue-100 shadow-sm">
-                  一つでも当てはまるなら、すぐにご相談ください。
+                  こんなお悩み、実務派会計士の「社外CFO」がすべて解決します。
                 </h3>
               </div>
 
-              <ul className="space-y-3 mb-6">
+              <ul className="space-y-3 relative z-10">
                 <li className="flex items-start bg-white border border-slate-200 p-3.5 sm:p-4 rounded-xl shadow-sm">
                   <CheckSquare className="text-orange-500 mr-3 shrink-0 mt-0.5" size={22} />
                   <span className="text-sm sm:text-base font-bold text-slate-700 leading-snug">利益は出ているのに、なぜかお金がない</span>
@@ -147,19 +144,6 @@ export default function Hero() {
                   <span className="text-sm sm:text-base font-bold text-slate-700 leading-snug">今の税理士に「未来の相談」ができない</span>
                 </li>
               </ul>
-
-              <div className="text-center bg-blue-50/80 rounded-xl p-4 mb-6 border border-blue-100">
-                <p className="text-sm sm:text-base font-bold text-slate-800 leading-relaxed">
-                  その悩み、実務派会計士の<br className="sm:hidden" />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-teal-600 text-lg sm:text-xl font-black mx-1">「社外CFO」</span>がすべて解決します。
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-teal-500 text-white text-sm sm:text-base font-bold px-6 py-3.5 rounded-full shadow-md w-full sm:w-auto">
-                  初回相談無料・秘密厳守
-                </div>
-              </div>
             </div>
             
             {/* Decorative Elements */}
