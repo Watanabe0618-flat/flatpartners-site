@@ -10,6 +10,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FloatingCTA from './components/FloatingCTA';
+import LineFloatingButton from './components/LineFloatingButton';
 import LegalModal from './components/LegalModal';
 
 export default function App() {
@@ -57,6 +58,7 @@ export default function App() {
       </div>
 
       <FloatingCTA />
+      <LineFloatingButton />
 
       <LegalModal
         isOpen={activeLegalModal !== null}
@@ -120,7 +122,7 @@ export default function App() {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             onClick={scrollToTop}
-            className="fixed bottom-8 right-8 z-50 p-3 bg-blue-700 text-white rounded-full shadow-lg hover:bg-blue-800 transition-colors"
+            className="fixed bottom-40 right-4 md:bottom-28 md:right-8 z-40 p-3 bg-blue-700 text-white rounded-full shadow-lg hover:bg-blue-800 transition-colors"
           >
             <ChevronUp className="w-6 h-6" />
           </motion.button>
