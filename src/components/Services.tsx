@@ -4,17 +4,6 @@ import { Briefcase, LineChart, Building } from 'lucide-react';
 
 const services = [
   {
-    icon: <Briefcase className="h-10 w-10 text-blue-600" />,
-    title: 'M&A・財務アドバイザリー',
-    subtitle: '（投資からPMI・EXITまで）',
-    description: 'M&A投資時のデューデリジェンス（会社の健康診断。通称DD）や企業価値評価（バリュエーション）のレポート作成と、PMIフェーズでもご支援が可能です。',
-    list: [
-      '財務・税務デューデリジェンス（DD）およびストラクチャー構築',
-      '企業価値評価（バリュエーション）',
-      'レポート提出後の継続的な経営サポート（PMI実行支援・組織再構築等）'
-    ]
-  },
-  {
     icon: <LineChart className="h-10 w-10 text-blue-600" />,
     title: '社外CFO・経営管理体制の構築',
     subtitle: '',
@@ -36,6 +25,17 @@ const services = [
       '日常的な会計・財務に関する相談・セカンドオピニオン',
       '月次決算の早期化と経営数値の可視化',
       'クラウド会計ソフトの活用支援'
+    ]
+  },
+  {
+    icon: <Briefcase className="h-10 w-10 text-blue-600" />,
+    title: 'M&A・財務アドバイザリー',
+    subtitle: '（投資からPMI・EXITまで）',
+    description: 'M&A投資時のデューデリジェンス（会社の健康診断。通称DD）や企業価値評価（バリュエーション）のレポート作成と、PMIフェーズでもご支援が可能です。',
+    list: [
+      '財務・税務デューデリジェンス（DD）およびストラクチャー構築',
+      '企業価値評価（バリュエーション）',
+      'レポート提出後の継続的な経営サポート（PMI実行支援・組織再構築等）'
     ]
   }
 ];

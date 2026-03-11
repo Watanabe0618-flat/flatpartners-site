@@ -4,21 +4,7 @@ import { Download, FileText, ExternalLink } from 'lucide-react';
 
 const knowledgeCategories = [
   {
-    category: 'カテゴリー1：M&A・企業価値評価',
-    items: [
-      {
-        title: '会社の値段はどう決まる？「株価算定（バリュエーション）」',
-        description: 'M&Aの現場でプロが使う「価値を測る3つのレンズ（コスト・マーケット・インカム）」と、見えない価値（のれん）の正体を解説します。',
-        image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80',
-        buttons: [
-          { label: '株価算定ロジック（簡易版）を開く', link: 'https://1drv.ms/b/c/48fc6611d8ccd3cf/IQB-H1OjVDZPTqLA7Vd6FyziAVEC5guo6W9TR76fO-8OFg8?e=QjsMkI' },
-          { label: '株価算定ロジック（標準版）を開く', link: 'https://1drv.ms/b/c/48fc6611d8ccd3cf/IQCzGi2NNTEwT52mXWD4LH0TAYngsDZ5IRROt3NYt-dH8ik?e=QRXO5Y' },
-        ]
-      }
-    ]
-  },
-  {
-    category: 'カテゴリー2：社外CFO・経営管理体制',
+    category: 'カテゴリー1：社外CFO・経営管理体制',
     items: [
       {
         title: '経営を加速させる新しい選択肢「社外CFO」',
@@ -47,7 +33,7 @@ const knowledgeCategories = [
     ]
   },
   {
-    category: 'カテゴリー3：資金調達・投資判断',
+    category: 'カテゴリー2：資金調達・投資判断',
     items: [
       {
         title: '会社の命運を分ける「設備投資の意思決定」',
@@ -63,6 +49,20 @@ const knowledgeCategories = [
         image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80',
         buttons: [
           { label: '銀行対策 を開く', link: 'https://1drv.ms/b/c/48fc6611d8ccd3cf/IQAvR8Akb9CISqBxpLcplvMMAfkO3P9cc7AOGWPfFalBk8c?e=2dCush' },
+        ]
+      }
+    ]
+  },
+  {
+    category: 'カテゴリー3：M&A・企業価値評価',
+    items: [
+      {
+        title: '会社の値段はどう決まる？「株価算定（バリュエーション）」',
+        description: 'M&Aの現場でプロが使う「価値を測る3つのレンズ（コスト・マーケット・インカム）」と、見えない価値（のれん）の正体を解説します。',
+        image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80',
+        buttons: [
+          { label: '株価算定ロジック（簡易版）を開く', link: 'https://1drv.ms/b/c/48fc6611d8ccd3cf/IQB-H1OjVDZPTqLA7Vd6FyziAVEC5guo6W9TR76fO-8OFg8?e=QjsMkI' },
+          { label: '株価算定ロジック（標準版）を開く', link: 'https://1drv.ms/b/c/48fc6611d8ccd3cf/IQCzGi2NNTEwT52mXWD4LH0TAYngsDZ5IRROt3NYt-dH8ik?e=QRXO5Y' },
         ]
       }
     ]

@@ -8,7 +8,7 @@ export default function Contact() {
     name: '',
     email: '',
     phone: '',
-    category: 'M&A（投資・PMI・EXIT）',
+    category: '',
     details: '',
   });
 
@@ -42,7 +42,7 @@ export default function Contact() {
         name: '',
         email: '',
         phone: '',
-        category: 'M&A（投資・PMI・EXIT）',
+        category: '',
         details: '',
       });
     } catch (error) {
@@ -203,15 +203,17 @@ export default function Contact() {
                       <select
                         id="category"
                         name="category"
+                        required
                         value={formData.category}
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-colors outline-none bg-white text-base"
                       >
-                        <option>M&A（投資・PMI・EXIT）</option>
-                        <option>社外CFO</option>
-                        <option>管理体制構築</option>
-                        <option>税務・会計顧問</option>
-                        <option>その他</option>
+                        <option value="" disabled>選択してください</option>
+                        <option value="社外CFO">社外CFO</option>
+                        <option value="管理体制構築">管理体制構築</option>
+                        <option value="税務・会計顧問">税務・会計顧問</option>
+                        <option value="M&A（投資・PMI・EXIT）">M&A（投資・PMI・EXIT）</option>
+                        <option value="その他">その他</option>
                       </select>
                     </div>
 
