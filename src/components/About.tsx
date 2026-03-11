@@ -18,6 +18,16 @@ export default function About() {
             </h3>
             <div className="w-16 h-1 bg-blue-600 mb-8"></div>
             
+            <div className="mb-12 bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-100 text-center">
+              <h4 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight mb-4">
+                専門用語の壁をなくし、<br className="sm:hidden" />
+                経営と「<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">フラット</span>」に向き合う。
+              </h4>
+              <p className="text-slate-600 font-medium">
+                これが、当事務所のコアバリューであり、すべての支援の原点です。
+              </p>
+            </div>
+
             <div className="mb-8">
               <p className="text-xl font-bold text-slate-900 mb-2">代表 公認会計士・税理士 渡部 興二（わたなべ こうじ）</p>
               <p className="text-lg font-bold text-blue-700 bg-blue-50 inline-block px-4 py-2 rounded-md">

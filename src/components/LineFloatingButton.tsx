@@ -14,7 +14,7 @@ export default function LineFloatingButton() {
         boxShadow: "0 20px 25px -5px rgba(6, 199, 85, 0.4), 0 8px 10px -6px rgba(6, 199, 85, 0.2)" 
       }}
       whileTap={{ scale: 0.95 }}
-      className="fixed bottom-24 right-4 md:bottom-8 md:right-8 z-50 flex items-center gap-2 bg-[#06C755] text-white px-5 py-3.5 md:px-6 md:py-4 rounded-full shadow-lg transition-colors duration-300 hover:bg-[#05b34c]"
+      className="fixed bottom-24 right-4 md:bottom-8 md:right-8 z-50 hidden md:flex items-center gap-2 bg-[#06C755] text-white px-5 py-3.5 md:px-6 md:py-4 rounded-full shadow-lg transition-colors duration-300 hover:bg-[#05b34c]"
     >
       <svg 
         viewBox="0 0 24 24" 

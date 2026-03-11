@@ -1,12 +1,10 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, CheckSquare } from 'lucide-react';
-import BrandLogo from './BrandLogo';
+import { Check } from 'lucide-react';
 
 export default function Hero() {
-  // Force rebuild: White card visibility check
   return (
-    <section id="home" className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-blue-950">
+    <section id="home" className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-blue-950 min-h-[100svh] flex items-center">
       {/* Space Background */}
       <div className="absolute inset-0 z-0">
         <img
@@ -22,16 +20,6 @@ export default function Hero() {
       <div className="absolute inset-0 z-0 overflow-hidden mix-blend-screen opacity-70 pointer-events-none">
         <div className="absolute w-[120%] h-[120%] -left-[10%] -top-[10%] animate-aurora-pan-x relative">
           <img 
-            /* 
-             * ユーザー様へ: 
-             * Bing Image Creatorのリンク（https://sl.bing.net/HBvig0iQBo）は直接画像として読み込めないため、
-             * 雰囲気が近い代替画像（Unsplash）を設定しています。
-             * 
-             * ご指定の画像を使用したい場合は、以下の手順で差し替えてください：
-             * 1. Bing Image Creatorから画像をダウンロードします。
-             * 2. プロジェクトの `public` フォルダに配置します（例: `my-bing-aurora-2.jpg`）。
-             * 3. 以下の `src` を `/my-bing-aurora-2.jpg` に書き換えてください。
-             */
             src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?q=80&w=2070&auto=format&fit=crop" 
             alt="Aurora" 
             className="w-full h-full object-cover"
@@ -39,7 +27,6 @@ export default function Hero() {
           />
           
           {/* ふたご座（Gemini Constellation） */}
-          {/* オーロラと一緒に動くように、同じコンテナ内に配置しています */}
           <div className="absolute top-[15%] right-[25%] w-64 h-64 md:w-96 md:h-96 opacity-60">
             <svg viewBox="0 0 300 300" className="w-full h-full drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">
               {/* 星座の線 */}
@@ -86,69 +73,79 @@ export default function Hero() {
         <div className="meteor top-[70%] left-[70%] delay-3000"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div className="flex flex-col items-center text-center">
           
-          {/* Left Column: Catchphrase & CTA */}
-          <motion.div
+          {/* (A) 問いかけキャッチコピー */}
+          <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-left"
+            className="text-[22px] sm:text-3xl md:text-4xl font-black text-white leading-tight mb-8 drop-shadow-md"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 tracking-tight drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
-              専門用語の壁をなくし、<br />
-              経営と<span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-400 drop-shadow-[0_0_15px_rgba(20,184,166,0.5)]">「フラット」</span>に向き合う。
-            </h1>
-            
-            <p className="text-lg md:text-xl text-blue-100 font-bold mb-8 leading-relaxed">
-              M&Aの最前線で企業を成長させた<br className="hidden sm:block" />
-              「実務派会計士」が、あなたの最強の右腕に。
-            </p>
+            経営の「<span className="text-[#FBBF24]">数字の悩み</span>」、誰に相談していますか？
+          </motion.h1>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-               <a href="#services" className="bg-white/10 hover:bg-white/20 text-white font-bold py-4 px-8 rounded-full border border-white/30 backdrop-blur-sm transition-all flex items-center justify-center hover:bg-white/20">
-                 サービス詳細を見る
-               </a>
-            </div>
+          {/* (B) 悩みリストカード */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="w-[calc(100%-24px)] sm:w-full max-w-2xl bg-white rounded-[14px] shadow-[0_8px_30px_rgba(0,0,0,0.12)] p-5 sm:p-8 mb-12 text-left mx-auto"
+          >
+            <ul className="space-y-4">
+              <li className="flex items-start pb-4 border-b border-[#f0f0f0]">
+                <div className="bg-[#fff3e0] p-1 rounded mr-3 shrink-0 mt-0.5">
+                  <Check className="text-orange-500 w-4 h-4" strokeWidth={3} />
+                </div>
+                <span className="text-[14px] sm:text-base font-medium text-slate-800 leading-[1.6]">
+                  利益は出ているのに、なぜか手元にお金が残らない
+                </span>
+              </li>
+              <li className="flex items-start pb-4 border-b border-[#f0f0f0]">
+                <div className="bg-[#fff3e0] p-1 rounded mr-3 shrink-0 mt-0.5">
+                  <Check className="text-orange-500 w-4 h-4" strokeWidth={3} />
+                </div>
+                <span className="text-[14px] sm:text-base font-medium text-slate-800 leading-[1.6]">
+                  税理士の先生には聞きにくい「経営の未来」の相談相手がいない
+                </span>
+              </li>
+              <li className="flex items-start">
+                <div className="bg-[#fff3e0] p-1 rounded mr-3 shrink-0 mt-0.5">
+                  <Check className="text-orange-500 w-4 h-4" strokeWidth={3} />
+                </div>
+                <span className="text-[14px] sm:text-base font-medium text-slate-800 leading-[1.6]">
+                  投資やM&Aの判断を、数字の裏付けなく"勘"で決めてしまっている
+                </span>
+              </li>
+            </ul>
           </motion.div>
 
-          {/* Right Column: Pain Points Card (White Semi-transparent) */}
+          {/* (C) 解決提示 */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="mb-12 text-center"
           >
-            {/* Card Body */}
-            <div className="bg-white/95 backdrop-blur-md rounded-2xl p-5 sm:p-6 md:p-8 shadow-2xl border border-white/50 text-slate-800 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-blue-600 to-teal-400"></div>
-              
-              <div className="text-center mb-5">
-                <h3 className="inline-block bg-blue-50 text-blue-800 font-bold px-4 py-2 rounded-full text-sm sm:text-base border border-blue-100 shadow-sm">
-                  こんなお悩み、実務派会計士の「社外CFO」がすべて解決します。
-                </h3>
-              </div>
+            <span className="inline-block bg-blue-600 text-white text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full mb-3 tracking-wider">
+              SOLUTION
+            </span>
+            <h2 className="text-[16px] sm:text-xl font-bold text-white leading-relaxed drop-shadow-md">
+              こんな悩み、実務派会計士の「<span className="text-[#7ecfff] font-black drop-shadow-sm">社外CFO</span>」がすべて解決します。
+            </h2>
+          </motion.div>
 
-              <ul className="space-y-3 relative z-10">
-                <li className="flex items-start bg-white border border-slate-200 p-3.5 sm:p-4 rounded-xl shadow-sm">
-                  <CheckSquare className="text-orange-500 mr-3 shrink-0 mt-0.5" size={22} />
-                  <span className="text-sm sm:text-base font-bold text-slate-700 leading-snug">利益は出ているのに、なぜかお金がない</span>
-                </li>
-                <li className="flex items-start bg-white border border-slate-200 p-3.5 sm:p-4 rounded-xl shadow-sm">
-                  <CheckSquare className="text-orange-500 mr-3 shrink-0 mt-0.5" size={22} />
-                  <span className="text-sm sm:text-base font-bold text-slate-700 leading-snug">M&Aの買い時・売り時、統合に悩んでいる</span>
-                </li>
-                <li className="flex items-start bg-white border border-slate-200 p-3.5 sm:p-4 rounded-xl shadow-sm">
-                  <CheckSquare className="text-orange-500 mr-3 shrink-0 mt-0.5" size={22} />
-                  <span className="text-sm sm:text-base font-bold text-slate-700 leading-snug">今の税理士に「未来の相談」ができない</span>
-                </li>
-              </ul>
-            </div>
-            
-            {/* Decorative Elements */}
-            <div className="absolute -z-10 top-10 -right-10 w-32 h-32 bg-teal-400 rounded-full blur-3xl opacity-30"></div>
-            <div className="absolute -z-10 -bottom-10 -left-10 w-32 h-32 bg-blue-600 rounded-full blur-3xl opacity-30"></div>
+          {/* (D) 権威性ボックス */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="w-[calc(100%-24px)] sm:w-full max-w-2xl bg-gradient-to-br from-[#1a2744] to-[#243455] rounded-[12px] p-5 sm:p-6 border border-white/20 shadow-xl text-left mx-auto"
+          >
+            <p className="text-[15px] sm:text-lg font-bold text-white leading-relaxed">
+              <span className="text-[#7ecfff]">M&Aの最前線</span>で企業を成長させた「実務派会計士」が、あなたの<span className="text-[#7ecfff]">最強の右腕</span>に。
+            </p>
           </motion.div>
 
         </div>

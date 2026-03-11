@@ -34,8 +34,14 @@ const knowledgeCategories = [
         description: '直感や経験への依存を捨て、データに基づく意思決定の基盤を作るためのステップと、未来の利益を設計する変動損益計算の概要です。',
         image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
         buttons: [
-          { label: '脱・勘ピュータ経営 を開く', link: 'https://1drv.ms/b/c/48fc6611d8ccd3cf/IQAkfyKhrgoeTqQbwctcXgULAbPtTjLsXtcRoScfNQnpu8Y?e=6uUcwC' },
-          { label: '変動損益計算の概要と実例 を開く', link: 'https://1drv.ms/b/c/48fc6611d8ccd3cf/IQBas-6jpylPSYXVc0SQiKG0ASJGsjnXryxugtpizboZiEE?e=SKJH81' },
+          { 
+            label: '脱・勘ピュータ経営 を開く', 
+            link: 'https://1drv.ms/b/c/48fc6611d8ccd3cf/IQAkfyKhrgoeTqQbwctcXgULAbPtTjLsXtcRoScfNQnpu8Y?e=6uUcwC' 
+          },
+          { 
+            label: '変動損益計算の概要と実例 を開く', 
+            link: 'https://1drv.ms/b/c/48fc6611d8ccd3cf/IQBas-6jpylPSYXVc0SQiKG0ASJGsjnXryxugtpizboZiEE?e=SKJH81' 
+          },
         ]
       }
     ]
