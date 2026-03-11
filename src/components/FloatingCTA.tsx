@@ -17,7 +17,7 @@ export default function FloatingCTA() {
         <motion.button
           whileTap={{ scale: 0.96 }}
           onClick={scrollToContact}
-          className="flex-1 bg-[#2b7de9] text-white rounded-[10px] flex flex-col items-center justify-center py-2 px-1 shadow-sm"
+          className="flex-1 bg-[#f57c00] text-white rounded-[10px] flex flex-col items-center justify-center py-2 px-1 shadow-sm"
         >
           <div className="flex items-center gap-1.5 mb-0.5">
             <Mail className="w-4 h-4" />

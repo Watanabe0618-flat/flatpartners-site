@@ -9,6 +9,7 @@ export default function Contact() {
     email: '',
     phone: '',
     category: 'M&A（投資・PMI・EXIT）',
+    details: '',
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -28,6 +29,7 @@ export default function Contact() {
       formDataObj.append('email', formData.email);
       formDataObj.append('phone', formData.phone);
       formDataObj.append('category', formData.category);
+      formDataObj.append('details', formData.details);
 
       await fetch('/', {
         method: 'POST',
@@ -41,6 +43,7 @@ export default function Contact() {
         email: '',
         phone: '',
         category: 'M&A（投資・PMI・EXIT）',
+        details: '',
       });
     } catch (error) {
       console.error('Submission error:', error);
@@ -134,7 +137,10 @@ export default function Contact() {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                 >
-                  <h4 className="text-2xl font-bold text-slate-900 mb-6">お問い合わせフォーム</h4>
+                  <h4 className="text-2xl font-bold text-slate-900 mb-2">お問い合わせフォーム</h4>
+                  <p className="text-[13px] sm:text-[14px] text-[#6e7891] mb-6">
+                    まずはお気軽にご相談ください。内容が固まっていなくても大丈夫です。
+                  </p>
                   <p className="text-sm text-slate-600 mb-4 text-right">
                     <span className="text-red-500">*</span> は必須項目です
                   </p>
@@ -207,6 +213,21 @@ export default function Contact() {
                         <option>税務・会計顧問</option>
                         <option>その他</option>
                       </select>
+                    </div>
+
+                    <div>
+                      <label htmlFor="details" className="block text-sm font-medium text-slate-700 mb-1">
+                        ご相談内容の詳細（任意）
+                      </label>
+                      <textarea
+                        id="details"
+                        name="details"
+                        rows={4}
+                        value={formData.details}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-colors outline-none text-base resize-y"
+                        placeholder="例：利益は出ているのに資金繰りが厳しく、原因がわからない"
+                      ></textarea>
                     </div>
 
                     {status === 'error' && (

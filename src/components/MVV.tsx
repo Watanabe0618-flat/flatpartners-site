@@ -6,11 +6,28 @@ export default function MVV() {
   return (
     <section id="mvv" className="py-24 bg-white/60 backdrop-blur-xl relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-sm font-bold text-blue-600 tracking-wider uppercase mb-2">Philosophy</h2>
           <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">ミッション・ビジョン・バリュー</h3>
           <div className="w-16 h-1 bg-blue-600 mx-auto mb-6"></div>
         </div>
+
+        {/* Core Value Statement */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-16 bg-white p-8 sm:p-10 rounded-2xl shadow-sm border border-slate-100 text-center max-w-4xl mx-auto"
+        >
+          <h4 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight mb-4">
+            専門用語の壁をなくし、<br className="sm:hidden" />
+            経営と「<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">フラット</span>」に向き合う。
+          </h4>
+          <p className="text-slate-600 font-medium text-lg">
+            これが、当事務所のコアバリューであり、すべての支援の原点です。
+          </p>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           {/* Mission */}

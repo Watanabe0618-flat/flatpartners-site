@@ -1,8 +1,5 @@
-node_modules/
-build/
-dist/
-coverage/
-.DS_Store
-*.log
-.env*
-!.env.example
+{
+  "name": "税務会計フラットパートナーズ",
+  "description": "税務会計フラットパートナーズの公式ウェブサイト",
+  "requestFramePermissions": []
+}

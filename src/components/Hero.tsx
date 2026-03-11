@@ -83,7 +83,8 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="text-[22px] sm:text-3xl md:text-4xl font-black text-white leading-tight mb-8 drop-shadow-md"
           >
-            経営の「<span className="text-[#FBBF24]">数字の悩み</span>」、誰に相談していますか？
+            経営の「<span className="text-[#FBBF24]">数字の悩み</span>」、<br />
+            誰に相談していますか？
           </motion.h1>
 
           {/* (B) 悩みリストカード */}
@@ -132,7 +133,7 @@ export default function Hero() {
               SOLUTION
             </span>
             <h2 className="text-[16px] sm:text-xl font-bold text-white leading-relaxed drop-shadow-md">
-              こんな悩み、実務派会計士の「<span className="text-[#7ecfff] font-black drop-shadow-sm">社外CFO</span>」がすべて解決します。
+              こんな悩み、実務派会計士の「<span className="text-white text-[18px] sm:text-[20px] font-black drop-shadow-sm">社外CFO</span>」がすべて解決します。
             </h2>
           </motion.div>
 
