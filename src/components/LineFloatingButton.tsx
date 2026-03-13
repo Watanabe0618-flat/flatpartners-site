@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 export default function LineFloatingButton() {
   return (
     <motion.a
-      href="https://lin.ee/ZJEGfe1"
+      href="https://lin.ee/xxxxx"
       target="_blank"
       rel="noopener noreferrer"
       initial={{ opacity: 0, y: 20 }}

@@ -35,8 +35,8 @@ export default function Header() {
               <BrandLogo theme="dark" className="w-10 h-10 group-hover:scale-105 transition-transform" />
               <div className="flex flex-col">
                 <span className="text-xl font-bold text-blue-900 tracking-tight leading-none mb-1 font-serif">税務会計フラットパートナーズ</span>
-                <span className="text-[9px] text-teal-600 font-bold tracking-[0.15em] uppercase leading-none">Flat Partners Tax & Accounting</span>
-                <span className="text-[7px] text-slate-500 font-medium tracking-wider mt-0.5">Certified Public Accountant · Tax Advisor</span>
+                <span className="hidden md:block text-[9px] text-teal-600 font-bold tracking-[0.15em] uppercase leading-none">Flat Partners Tax & Accounting</span>
+                <span className="hidden md:block text-[7px] text-slate-500 font-medium tracking-wider mt-0.5">Certified Public Accountant · Tax Advisor</span>
               </div>
             </a>
           </div>
