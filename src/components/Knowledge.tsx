@@ -169,6 +169,7 @@ function KnowledgeCard({
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
+              download
               className="group flex items-center justify-between w-full bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 text-slate-700 hover:text-blue-700 px-4 py-3 rounded-lg text-sm font-semibold transition-all min-h-[44px]"
             >
               <span className="flex items-center gap-2">
