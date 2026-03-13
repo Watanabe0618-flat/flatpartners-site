@@ -65,7 +65,7 @@ export default function Contact() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 order-2 lg:order-1">
             <div className="bg-blue-900 text-white p-8 lg:p-10 rounded-3xl shadow-xl relative overflow-hidden h-full">
               <div className="absolute top-0 right-0 w-64 h-64 bg-blue-800 rounded-full blur-3xl -mr-20 -mt-20 opacity-50"></div>
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-700 rounded-full blur-3xl -ml-20 -mb-20 opacity-50"></div>
@@ -121,7 +121,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="bg-white rounded-3xl shadow-xl p-8 lg:p-10 border border-slate-100 relative overflow-hidden">
+          <div className="bg-white rounded-3xl shadow-xl p-8 lg:p-10 border border-slate-100 relative overflow-hidden order-1 lg:order-2">
             <AnimatePresence mode="wait">
               {status === 'success' ? (
                 <motion.div

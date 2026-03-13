@@ -12,7 +12,7 @@ const STEPS = [
           '資金ショートの危機を「たまたま」乗り切ることを繰り返していませんか？直感への依存を捨て、データに基づく意思決定の基盤を作るための最初の一歩です。',
         image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
         links: [
-          { label: '脱・勘ピュータ経営 を読む', url: '/pdfs/kanputer.pdf' },
+          { label: '脱・勘ピュータ経営 を読む', url: 'https://1drv.ms/b/c/48fc6611d8ccd3cf/IQBdV315CiNWS5ULp_2NpLOyAX5EjbXgmA88pRJtS9XK6Gw?e=fJaCs5' },
         ],
       },
     ],
@@ -28,7 +28,7 @@ const STEPS = [
           'P（単価）× Q（数量）− V（変動費）− F（固定費）＝ G（利益）。たった5つの記号で、利益創出の仕組みを読み解きます。',
         image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80',
         links: [
-          { label: '変動損益計算の実例 を読む', url: '/pdfs/hendosoneki.pdf' },
+          { label: '変動損益計算の実例 を読む', url: 'https://1drv.ms/b/c/48fc6611d8ccd3cf/IQAVjeCwphKXSJr8s29gKckCAUHfxwrMk3eRQQJrkIS_rNA?e=Uia45Y' },
         ],
       },
     ],
@@ -44,7 +44,7 @@ const STEPS = [
           '「夢」を語る前に、「返済の確実性」を数字で証明する。資金調達を成功させるキャッシュフロー予測のポイントを解説します。',
         image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80',
         links: [
-          { label: '銀行対策マニュアル を読む', url: '/pdfs/ginko.pdf' },
+          { label: '銀行対策マニュアル を読む', url: 'https://1drv.ms/b/c/48fc6611d8ccd3cf/IQBZMp2yXo8IT4290PYGgCcGASs97xxJSfIpDTQx_mHu85U?e=74i3xj' },
         ],
       },
       {
@@ -53,7 +53,7 @@ const STEPS = [
           'なんとなくの直感ではなく、回収期間・NPV・IRRなどのデータを用いて、投資回収のタイムラインを可視化するアプローチです。',
         image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80',
         links: [
-          { label: '設備投資の意思決定 を読む', url: '/pdfs/setsubi.pdf' },
+          { label: '設備投資の意思決定 を読む', url: 'https://1drv.ms/b/c/48fc6611d8ccd3cf/IQCQ6643rHSzQ5f8vXTWzHOYAaPC3mBcmOPzs2f2N7ZGSPM?e=Yf1yYG' },
         ],
       },
     ],
@@ -69,7 +69,7 @@ const STEPS = [
           '売上づくりに集中したいのに、お金の仕事に時間を取られていませんか？成長する中堅・中小企業の賢い選択肢です。',
         image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80',
         links: [
-          { label: '社外CFOの活用法 を読む', url: '/pdfs/cfo_reason.pdf' },
+          { label: '社外CFOの活用法 を読む', url: 'https://1drv.ms/b/c/48fc6611d8ccd3cf/IQAnRefWZIh4S7yywFsZm8f3Aa40HLMGMTnWYJ-0FlDmQP8?e=D4WAuY' },
         ],
       },
       {
@@ -78,7 +78,7 @@ const STEPS = [
           '既存の先生との関係性はそのままに、「守り」と「攻め」の両輪で強力な経営チームを構築します。',
         image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80',
         links: [
-          { label: '役割分担マップ を読む', url: '/pdfs/cfo_role.pdf' },
+          { label: '役割分担マップ を読む', url: 'https://1drv.ms/b/c/48fc6611d8ccd3cf/IQDoB12m2r7XSK4z-CBNyl1_Aa7Ej-MPRjCTSSvpScyGCtw?e=horIrJ' },
         ],
       },
     ],
@@ -94,8 +94,8 @@ const STEPS = [
           'M&Aの現場でプロが使う「価値を測る3つのレンズ」と、見えない価値（のれん）の正体を解説します。',
         image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80',
         links: [
-          { label: '株価算定ロジック（簡易版）を読む', url: '/pdfs/kabuka_simple.pdf' },
-          { label: '株価算定ロジック（標準版）を読む', url: '/pdfs/kabuka_standard.pdf' },
+          { label: '株価算定ロジック（簡易版）を読む', url: 'https://1drv.ms/b/c/48fc6611d8ccd3cf/IQCHxdUsE-oBTLLMyj5JNnhsAbdZEb38NFcvDTYP9tYdhy4?e=OHbqza' },
+          { label: '株価算定ロジック（標準版）を読む', url: 'https://1drv.ms/b/c/48fc6611d8ccd3cf/IQCz7pSEQxAJRYRfyBRqYwjhAX9MiC9IfK16vvvo_wCW9mw?e=dH2s9g' },
         ],
       },
     ],
@@ -169,7 +169,6 @@ function KnowledgeCard({
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              download
               className="group flex items-center justify-between w-full bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 text-slate-700 hover:text-blue-700 px-4 py-3 rounded-lg text-sm font-semibold transition-all min-h-[44px]"
             >
               <span className="flex items-center gap-2">
@@ -280,9 +279,7 @@ export default function Knowledge() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
-              href="https://lin.ee/xxxxx" /* TODO: 実際のLINE友だち追加URLに差し替え */
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
               className="bg-[#06C755] hover:bg-[#05b34c] text-white font-bold py-4 px-8 rounded-full transition-colors flex items-center justify-center gap-2 min-h-[48px]"
             >
               LINE で気軽に相談する

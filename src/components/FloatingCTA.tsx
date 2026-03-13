@@ -39,10 +39,8 @@ export default function FloatingCTA() {
         </motion.button>
 
         {/* Right Button (LINE) */}
-        <motion.a
-          href="https://lin.ee/xxxxx"
-          target="_blank"
-          rel="noopener noreferrer"
+        <motion.button
+          onClick={scrollToContact}
           whileTap={{ scale: 0.96 }}
           className="flex-[1.5] bg-[#06C755] text-white rounded-[10px] flex flex-col items-center justify-center py-2 px-1 shadow-sm"
         >
@@ -53,7 +51,7 @@ export default function FloatingCTA() {
             <span className="font-bold text-[12px] sm:text-[13px]">LINE相談</span>
           </div>
           <span className="text-[9px] opacity-90">初回無料</span>
-        </motion.a>
+        </motion.button>
       </div>
     </div>
   );
