@@ -26,6 +26,14 @@ export default function Footer({ onOpenPrivacy, onOpenDisclaimer }: FooterProps)
             </p>
             <div className="mt-6 text-sm text-slate-400 space-y-1">
               <p>〒162-0825 東京都新宿区神楽坂2-17 中央ビル7F</p>
+              <div className="mt-4 mb-2">
+                <p className="text-xs text-slate-500 mb-1">【初回無料】経営・財務の壁打ち相談専用ダイヤル</p>
+                <a href="tel:05017201202" className="text-xl font-bold text-white hover:text-orange-400 transition-colors inline-flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  050-1720-1202
+                </a>
+                <p className="text-xs text-slate-500 mt-1">受付：平日 10:00〜18:00（時間外はLINE・メールをご利用ください）</p>
+              </div>
               <p>Email: <a href="mailto:info@flatpartners.net?subject=%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B&body=%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0D%0A%E9%9B%BB%E8%A9%B1%E7%95%AA%E5%8F%B7%EF%BC%9A%0D%0A%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%EF%BC%9A%0D%0A%E3%81%94%E7%9B%B8%E8%AB%87%E5%86%85%E5%AE%B9%EF%BC%9A" className="hover:text-white transition-colors underline decoration-slate-600 underline-offset-2">info@flatpartners.net</a></p>
             </div>
           </div>

@@ -42,7 +42,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -52,16 +52,27 @@ export default function Header() {
                 {link.name}
               </a>
             ))}
+            <div className="flex flex-col items-end border-l border-slate-200 pl-6 lg:pl-8">
+              <div className="text-[10px] text-slate-500 font-bold mb-0.5">【初回無料】経営・財務の壁打ち相談専用ダイヤル</div>
+              <a href="tel:05017201202" className="flex items-center text-blue-700 font-bold text-lg hover:text-orange-500 transition-colors leading-none">
+                <Phone className="w-4 h-4 mr-1" />
+                050-1720-1202
+              </a>
+              <div className="text-[10px] text-slate-500 mt-0.5">受付：平日 10:00〜18:00</div>
+            </div>
             <a
               href="#contact"
-              className="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-bold rounded-md text-white bg-blue-700 hover:bg-blue-800 transition-colors shadow-sm"
+              className="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-bold rounded-md text-white bg-blue-700 hover:bg-blue-800 transition-colors shadow-sm whitespace-nowrap"
             >
               無料相談・お問い合わせ
             </a>
           </nav>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center gap-3">
+            <a href="tel:05017201202" className="flex items-center justify-center w-9 h-9 rounded-full bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors">
+              <Phone className="w-4 h-4" />
+            </a>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-slate-600 hover:text-slate-900 focus:outline-none"

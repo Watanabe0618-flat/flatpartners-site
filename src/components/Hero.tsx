@@ -108,7 +108,7 @@ export default function Hero() {
                   <Check className="text-orange-500 w-4 h-4" strokeWidth={3} />
                 </div>
                 <span className="text-[14px] sm:text-base font-medium text-slate-800 leading-[1.6]">
-                  税理士の先生には聞きにくい「経営の未来」の相談相手がいない
+                  税理士の先生には聞きにくい、「経営の未来」の相談相手がいない
                 </span>
               </li>
               <li className="flex items-start">
