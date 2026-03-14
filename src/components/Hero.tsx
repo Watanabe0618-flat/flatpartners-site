@@ -7,17 +7,17 @@ export default function Hero() {
       <StarryBackground />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-slate-950/50 pointer-events-none" />
 
-      <div className="relative z-10 text-center max-w-3xl mx-auto px-4 pt-16 md:pt-0">
+      <div className="relative z-10 text-center max-w-3xl mx-auto px-4 pt-16 md:pt-28">
         {/* h1: モバイルはtext-2xlに縮小、余白も詰める */}
-        <h1 className="text-2xl md:text-5xl font-bold text-white leading-tight mb-3 md:mb-8">
+        <h1 className="text-2xl md:text-5xl font-bold text-white leading-tight mb-3 md:mb-6">
           売上づくりに、
           <span className="text-amber-400">100%集中</span>
           できていますか？
         </h1>
 
         {/* ペインポイント: モバイルはパディングと行間を圧縮 */}
-        <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 md:p-8 mb-3 md:mb-8 max-w-2xl mx-auto">
-          <div className="space-y-1.5 md:space-y-4 text-left">
+        <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 md:p-6 mb-3 md:mb-6 max-w-2xl mx-auto">
+          <div className="space-y-1.5 md:space-y-3 text-left">
             <PainPoint text="利益は出ているのに、なぜか手元にお金が残らない" />
             <PainPoint text="税理士の先生には聞きにくい、「経営の未来」の相談相手がいない" />
             <PainPoint text='投資やM&Aの判断を、数字の裏付けなく "勘" で決めてしまっている' />
@@ -25,10 +25,10 @@ export default function Hero() {
         </div>
 
         {/* SOLUTION */}
-        <div className="mb-0 md:mb-8 flex flex-col items-center">
-          <div className="flex justify-center my-2 md:my-12">
+        <div className="mb-0 md:mb-6 flex flex-col items-center">
+          <div className="flex justify-center my-2 md:my-6">
             <svg
-              className="w-16 h-16 md:w-20 md:h-20 text-amber-400 animate-bounce"
+              className="w-16 h-16 md:w-16 md:h-16 text-amber-400 animate-bounce"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -41,14 +41,14 @@ export default function Hero() {
             こんな「数字の悩み」——<br className="md:hidden" />M&A先に役員常駐もした実務派会計士が、右腕となってすべて解決します。
           </p>
           {/* 権威テキスト: PCのみ表示（モバイルでは縦幅節約のため非表示） */}
-          <div className="hidden md:block bg-slate-800/80 rounded-lg p-4 mt-4 max-w-2xl mx-auto mb-8">
+          <div className="hidden md:block bg-slate-800/80 rounded-lg p-4 mt-4 max-w-2xl mx-auto mb-6">
             <p className="text-amber-400 font-bold text-sm md:text-base">
               経営者の隣で「一緒に考え、一緒に動く」。それがフラットパートナーズのスタンスです。
             </p>
           </div>
 
           {/* ヒーローCTA: PCのみ表示（モバイルは画面下部の固定フッターバーがCTA機能を担う） */}
-          <div className="hidden md:flex justify-center gap-4 mt-8">
+          <div className="hidden md:flex justify-center gap-4 mt-6">
             <a
               href="https://line.me/R/ti/p/@602drfaq"
               target="_blank"
