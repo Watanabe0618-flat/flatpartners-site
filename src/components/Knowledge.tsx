@@ -279,7 +279,9 @@ export default function Knowledge() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
-              href="#contact"
+              href="https://line.me/R/ti/p/@602drfaq"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#06C755] hover:bg-[#05b34c] text-white font-bold py-4 px-8 rounded-full transition-colors flex items-center justify-center gap-2 min-h-[48px]"
             >
               LINE で気軽に相談する

@@ -40,7 +40,7 @@ export default function FloatingCTA() {
 
         {/* Right Button (LINE) */}
         <motion.a
-          href="https://lin.ee/xxxxx" /* TODO: 実際のLINE友だち追加URLに差し替え */
+          href="https://line.me/R/ti/p/@602drfaq"
           target="_blank"
           rel="noopener noreferrer"
           whileTap={{ scale: 0.96 }}

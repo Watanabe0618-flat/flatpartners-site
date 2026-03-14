@@ -106,6 +106,23 @@ export default function Contact() {
                   </div>
                   
                   <div className="flex items-start">
+                    <div className="bg-[#06C755]/20 p-3 rounded-full mr-5 mt-1 flex-shrink-0">
+                      <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-[#06C755]">
+                        <path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.122.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.572-3.843 2.572-5.992zM8.58 12.76H6.103c-.342 0-.622-.279-.622-.622V7.485c0-.342.279-.622.622-.622s.622.279.622.622v4.031h1.855c.342 0 .622.279.622.622s-.279.623-.622.623zm3.507 0h-1.244c-.342 0-.622-.279-.622-.622V7.485c0-.342.279-.622.622-.622s.622.279.622.622v4.653c0 .343-.279.622-.622.622zm4.496-3.111c0 .342-.279.622-.622.622h-1.244v1.867c0 .342-.279.622-.622.622s-.622-.279-.622-.622V7.485c0-.342.279-.622.622-.622s.622.279.622.622v1.867h1.244c.342 0 .622.279.622.622zm4.496-1.542c0 .342-.279.622-.622.622h-1.867l1.867 2.489c.124.166.166.373.104.56-.062.187-.228.332-.415.332h-1.244c-.207 0-.394-.104-.518-.269l-1.867-2.489v2.136c0 .342-.279.622-.622.622s-.622-.279-.622-.622V7.485c0-.342.279-.622.622-.622h1.244c.207 0 .394.104.518.269l1.867 2.489V7.485c0-.342.279-.622.622-.622s.622.279.622.622v2.489z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-sm text-[#06C755] font-bold mb-1">LINEでのお問い合わせ</p>
+                      <div className="flex items-center gap-4 mt-2">
+                        <a href="https://line.me/R/ti/p/@602drfaq" target="_blank" rel="noopener noreferrer" className="bg-[#06C755] hover:bg-[#05b34c] text-white font-bold py-2 px-6 rounded-full transition-colors text-sm">
+                          友だち追加
+                        </a>
+                        <img src="https://qr-official.line.me/gs/M_602drfaq_GW.png?oat_content=qr" alt="LINE QR Code" className="w-16 h-16 rounded bg-white p-1" />
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start">
                     <MapPin className="h-8 w-8 text-blue-300 mr-6 mt-1 flex-shrink-0" />
                     <div>
                       <p className="text-sm text-blue-200 mb-1">所在地</p>

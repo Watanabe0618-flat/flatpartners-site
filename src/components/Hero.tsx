@@ -50,7 +50,9 @@ export default function Hero() {
           {/* ヒーローCTA: PCのみ表示（モバイルは画面下部の固定フッターバーがCTA機能を担う） */}
           <div className="hidden md:flex justify-center gap-4 mt-8">
             <a
-              href="#contact"
+              href="https://line.me/R/ti/p/@602drfaq"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#06C755] hover:bg-[#05b34c] text-white font-bold py-3 px-8 rounded-full transition-colors flex items-center justify-center gap-2 min-h-[48px]"
             >
               LINE で気軽に相談する
