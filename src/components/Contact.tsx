@@ -114,10 +114,13 @@ export default function Contact() {
                     <div>
                       <p className="text-sm text-[#06C755] font-bold mb-1">LINEでのお問い合わせ</p>
                       <div className="flex items-center gap-4 mt-2">
-                        <a href="https://line.me/R/ti/p/@602drfaq" target="_blank" rel="noopener noreferrer" className="bg-[#06C755] hover:bg-[#05b34c] text-white font-bold py-2 px-6 rounded-full transition-colors text-sm">
-                          友だち追加
-                        </a>
-                        <img src="https://qr-official.line.me/gs/M_602drfaq_GW.png?oat_content=qr" alt="LINE QR Code" className="w-16 h-16 rounded bg-white p-1" />
+                        <div>
+                          <a href="https://line.me/R/ti/p/@602drfaq" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#06C755] hover:bg-[#05b34c] text-white font-bold py-2 px-6 rounded-full transition-colors text-sm">
+                            LINEで相談する
+                          </a>
+                          <p className="text-xs text-blue-200 mt-1">友だち追加後、そのままメッセージを送れます</p>
+                        </div>
+                        <img src="https://qr-official.line.me/gs/M_602drfaq_GW.png?oat_content=qr" alt="LINE QR Code" className="hidden md:block w-16 h-16 rounded bg-white p-1" />
                       </div>
                     </div>
                   </div>
