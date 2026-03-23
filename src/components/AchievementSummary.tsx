@@ -32,7 +32,11 @@ export default function AchievementSummary() {
         </div>
       </div>
       
-      <div className="container mx-auto px-4 mt-12 text-center">
+      <p className="text-center text-sm md:text-base text-slate-700 mt-12 px-4">
+        この経験を活かして、今は中小企業の経営者の「社外CFO」として、経営管理体制の構築から伴走しています。
+      </p>
+      
+      <div className="container mx-auto px-4 mt-8 text-center">
         <p className="text-sm md:text-base text-slate-700 mb-4">
           noteやXをご覧いただいた方へ——まずは60分の無料壁打ち相談から
         </p>
